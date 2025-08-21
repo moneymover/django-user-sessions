@@ -22,7 +22,7 @@ class Session(AbstractBaseSession):
     abstracts the sending and receiving of cookies. Cookies contain a
     session ID -- not the data itself.
 
-    Additionally this session object providers the following properties:
+    Additionally this session object provides the following properties:
     ``user``, ``user_agent`` and ``ip``.
     """
     user = models.ForeignKey(getattr(settings, 'AUTH_USER_MODEL', 'auth.User'),
